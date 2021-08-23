@@ -12,11 +12,14 @@ hideCashGiven();
 hideChangeTable();
 
 nextbtn.addEventListener("click", function () {
-    
+
 
     if (billAmount.value < 0)
         showMessage("invalid amount");
-    else {
+    else if (billAmount.value == "") {
+        showMessage("Please enter an amount");
+    } else {
+
         message.style.display = "none";
         showCashGiven();
     }
