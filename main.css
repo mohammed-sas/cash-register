@@ -26,9 +26,9 @@ button {
 
 /* heading */
 .heading {
-    background-color: var(--primary-color);
-    color: white;
+    color: var(--primary-color);
     text-align: center;
+
 }
 
 /* body */
@@ -96,8 +96,8 @@ input {
     border: 2px solid var(--primary-color);
 }
 
-.change-table caption{
-    font-size:x-large;
+.change-table caption {
+    font-size: x-large;
     font-weight: 400;
 }
 
