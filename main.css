@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --max-width: 900px;
+    --primary-color: #34D399;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: var(--max-width);
+    margin: auto;
+
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    height: 30px;
+    border-radius: 1rem;
+}
+
+/* heading */
+.heading {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* body */
+
+.label-bill-amount {
+    margin: auto;
+    padding: 0.75rem 0rem;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+input {
+    border: 3px solid var(--primary-color);
+    border-radius: 1rem;
+    width: 40%;
+    height: 30px;
+
+    margin: 0.5rem auto;
+
+}
+
+.div-cash-given {
+    display: flex;
+    flex-direction: column;
+    width: var(--max-width);
+    margin: 0.5rem 0rem;
+}
+
+.label-cash-given {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0rem;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+#cash-given {
+    display: block;
+
+}
+
+#next {
+    width: 20%;
+    margin: 1rem auto;
+    color: white;
+}
+
+#check-btn {
+    display: block;
+    width: 20%;
+    margin: 1rem auto;
+    color: white;
+
+}
+
+/* change table */
+.div-change-table {
+    margin: auto;
+}
+
+.change-table {
+    border: 2px solid var(--primary-color);
+}
+
+.change-table caption{
+    font-size:x-large;
+    font-weight: 400;
+}
+
+.change-table td,
+th {
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+}
