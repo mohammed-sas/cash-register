@@ -13,7 +13,7 @@ hideChangeTable();
 
 nextbtn.addEventListener("click", function () {
             hideChangeTable();
-            cashGiven.value="";
+            
 
     if (billAmount.value < 0)
         showMessage("invalid amount");
@@ -28,15 +28,16 @@ nextbtn.addEventListener("click", function () {
 
 checkBtn.addEventListener("click", function () {
     message.style.display = "none";
-    console.log(cashGiven.value >= billAmount.value);
+    console.log(Number(cashGiven.value) >= Number( billAmount.value));
     if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
+        if (Number(cashGiven.value) >= Number( billAmount.value)) {
             const amountReturn = cashGiven.value - billAmount.value;
             calculateChange(amountReturn);
 
         } else {
             console.log(billAmount.value, cashGiven.value);
             showMessage("Insufficient cash provided");
+            hideChangeTable();
         }
     } else {
         showMessage("Invalid amount");
